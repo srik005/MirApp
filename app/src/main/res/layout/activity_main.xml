@@ -7,7 +7,7 @@
 
 
     <fragment
-        android:id="@+id/abc"
+        android:id="@+id/arFragment"
         android:name="com.google.ar.sceneform.ux.ArFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -18,10 +18,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btnn"
+        android:id="@+id/btnColor"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
-        android:text="click"
+        android:text="@string/change_color"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:backgroundTint="@android:color/background_dark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

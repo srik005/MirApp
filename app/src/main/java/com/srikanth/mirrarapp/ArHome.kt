@@ -20,8 +20,8 @@ class ArHome : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        arCam = supportFragmentManager.findFragmentById(R.id.abc) as ArFragment?
-        btn=findViewById(R.id.btnn)
+        arCam = supportFragmentManager.findFragmentById(R.id.arFragment) as ArFragment?
+        btn=findViewById(R.id.btnColor)
 
         arCam?.setOnTapArPlaneListener { hitResult, plane, motionEvent ->
             val anchor = hitResult.createAnchor()
